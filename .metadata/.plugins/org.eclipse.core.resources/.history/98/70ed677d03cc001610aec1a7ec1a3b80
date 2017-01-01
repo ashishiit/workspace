@@ -1,0 +1,37 @@
+'''
+Created on Dec 24, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.next = None
+        self.data = data
+class SeparateChain:
+    def __init__(self):
+        self.first = None
+        self.last = None
+    def Insert(self,data):
+        NewLink = Link(data)
+        if self.last is None:
+            self.first = NewLink
+        else:
+            self.last.next = NewLink
+        self.last = NewLink
+    def Display(self):
+        current = self.first
+        while current is not None:
+            print(current.data, end = ' ')
+            current = current.next
+class SeparateChaining:
+    def __init__(self,index):
+        a = [None] * 12
+        l = Link(a)
+#         for i in range(12):
+            
+    def hashFunction(self,key, size):
+        return key%size
+    def Insert(self,key):
+        hashVal = self.hashFunction(key,size = 12)
+#         print(hashVal)
+        l.Insert(self.a[hashVal])

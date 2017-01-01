@@ -1,0 +1,7 @@
+0000 John Smith L 28
+0001 Rachel Sue A 25
+1001 Jack Shane I 1
+2238 Will Smith H 15
+3578 Jane Roberts L 8
+1423 Max Williams R 3
+1756 Sharon Phil A 1

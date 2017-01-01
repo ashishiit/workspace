@@ -1,0 +1,13 @@
+'''
+Created on Dec 31, 2016
+
+@author: S528358
+'''
+a = [1, 2, 3]
+total = 5
+s = [0] * 5
+s[0] = 0
+for i in range(1, 6):
+    for j in range(3):
+        if i >= a[j]:
+            s[i] = 

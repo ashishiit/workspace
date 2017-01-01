@@ -1,0 +1,32 @@
+'''
+Created on Dec 20, 2016
+
+@author: S528358
+'''
+a = [5, 8, 1, 3, 7, 9, 2]
+def Partition(a):
+    pivot = a[0]
+    left = 1
+    right = len(a) - 1
+    while True:
+#         print(a[left])
+        while a[left] < pivot:
+            left = left + 1
+        while a[right] > pivot:
+            right = right - 1
+        if left >= right:
+            break
+        else:
+            Swap(a,left,right)
+#         print(a)
+#         return right
+#         print('pivot = %d'%left)
+    Swap(a,a.index(pivot),right)
+#     return right
+def Swap(a,left, right):
+    temp = a[right]
+    a[right] = a[left]
+    a[left] = temp
+# print('pivot = ',Partition(a))
+print('after partition')
+print(a)

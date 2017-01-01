@@ -1,0 +1,10 @@
+'''
+Created on Dec 20, 2016
+
+@author: S528358
+'''
+def Sort(self,a):
+    if len(a)>1:
+        mid = len(a) //2
+        left = Sort(a[:mid])
+        right = Sort(a[mid:])

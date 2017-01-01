@@ -1,0 +1,32 @@
+'''
+Created on Dec 18, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+        self.down = None
+class FlattenLinkedList:
+    def __init__(self):
+        self.first = None
+    def InsertFirst(self,data):
+        NewLink = Link(data)
+        NewLink.next = self.first
+        self.first = NewLink
+    def Display(self):
+        current = self.first
+        while current is not None:
+            print(current.data)
+            current = current.next
+
+    def Solution(self):
+#         print(l1.first.next.data)
+#         print(l2.first.data)
+#         l1.first.next.down = l2.first
+#         print(l1.first.next.down.data)
+        
+        
+l = FlattenLinkedList()
+

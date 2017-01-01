@@ -1,0 +1,26 @@
+'''
+Created on Dec 24, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.next = None
+        self.data = data
+class SeparateChain:
+    def __init__(self):
+        self.first = None
+        self.last = None
+    def Insert(self,data):
+        NewLink = Link(data)
+        if self.last is None:
+            self.first = NewLink
+        else:
+            self.last.next = NewLink
+        self.last = NewLink
+    def Display(self):
+        current = self.first
+        while current is not None:
+            print(current.data, end = ' ')
+            current = current.next
+    

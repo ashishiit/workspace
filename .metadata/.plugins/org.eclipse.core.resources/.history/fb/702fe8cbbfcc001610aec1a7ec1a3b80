@@ -1,0 +1,28 @@
+'''
+Created on Dec 27, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.next = None
+        self.data = data
+class List:
+    def __init__(self):
+        self.first = None
+    def Insert(self,data):
+        NewLink = Link(data)
+        NewLink.next = self.first
+        self.first = NewLink
+    def Display(self):
+        current = self.first
+        while current is not None:
+            print(current.data, end = ' ')
+            current = current.next
+l1 = List()
+l2 = List()
+l1.Insert(45)
+l1.Insert(5)
+l2.Insert(78)
+l2.Insert(90)
+l2.Insert(55)

@@ -1,0 +1,136 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.left = None
+        self.right = None
+class Tree:
+    def __init__(self):
+        self.root = None
+    def Search(self,data):
+        current = self.root
+        while current.data is not data:
+            if data > current.data:
+                current = current.right
+            else:
+                current = current.left
+            if current is None:
+                return None
+        return current
+    def Insert(self,data):
+        NewNode = Node(data)
+        if self.root is None:
+            self.root = NewNode
+        else:
+            current = self.root
+            while True:
+                parent = current
+                if data > current.data:
+                    current = current.right
+                    if current is None:
+                        parent.right = NewNode
+                        return
+                else:
+                    current = current.left
+                    if current is None:
+                        parent.left = NewNode
+                        return
+    def Display(self):
+        self.InOrder(self.root)
+    def Delete(self,target):
+        '''1. target has no children
+           2. target has 1 child
+           3. target has 2 children'''
+        current = self.root
+        while current.data is not target:
+            parent = current
+            if target > current.data:
+                current = current.right
+            else:
+                current = current.left
+            if current is None:
+                return None
+        '''target has no children'''
+        if current.left is None and current.right is None:
+            if current is self.root:
+                self.root = None
+            else:
+                if current is parent.right:
+                    parent.right = None
+                else:
+                    parent.left = None
+        
+        elif current.right is None:
+            if current is self.root:
+                self.root = current.left
+            else:
+                if current is parent.right:
+                    parent.right = current.left
+                else:
+                    parent.left = current.left
+        
+        elif current.left is None:
+            if current is self.root:
+                self.root = current.right
+            else:
+                if current is parent.right:
+                    parent.right = current.right
+                else:
+                    parent.left = current.right
+        
+        elif current.right is not None and current.left is not None:
+            successor = self.getSuccessor(current)
+            if current is self.root:
+                self.root = successor
+            elif current is parent.left:
+                parent.left = successor
+            else:
+                parent.right = successor
+            successor.left = current.left
+        return current
+    def getSuccessor(self,delNode):
+        successorParent = delNode
+        successor = delNode
+        current = delNode.right
+        while current is not None:
+            succesorParent = successor
+            successor = current
+            current = current.left
+        if successor is not delNode.right:
+            successorParent.left = successor.right
+            successor.right = delNode.right
+        return successor
+        
+        
+    def InOrder(self,root):
+        if root is None:
+            return
+        else:
+            self.InOrder(root.left)
+            print(root.data, end = ' ')
+            self.InOrder(root.right)
+t = Tree()
+t.Insert(50)
+t.Insert(45)
+t.Insert(60)
+t.Insert(60)
+t.Insert(40)
+t.Insert(47)
+t.Insert(52)
+t.Insert(80)
+t.Insert(32)
+t.Insert(90)
+t.Insert(85)
+t.Insert(82)
+t.Insert(87)
+t.Insert(83)
+t.Display()
+s = t.Search(500)
+if s is None:
+    print('element not found')
+else:
+    print('found')
+d = t.Delete(522)
+if d is None:
+    print('not found')
+else:
+    print('element deleted')

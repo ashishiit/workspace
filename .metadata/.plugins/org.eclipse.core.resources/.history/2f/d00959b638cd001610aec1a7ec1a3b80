@@ -1,0 +1,42 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.left = None
+        self.right = None
+class Tree:
+    def __init__(self):
+        self.root = None
+    def Search(self,data):
+        
+    def Insert(self,data):
+        NewNode = Node(data)
+        if self.root is None:
+            self.root = NewNode
+        else:
+            current = self.root
+            while True:
+                parent = current
+                if data > current.data:
+                    current = current.right
+                    if current is None:
+                        parent.right = NewNode
+                        return
+                else:
+                    current = current.left
+                    if current is None:
+                        parent.left = NewNode
+                        return
+    def Display(self):
+        self.InOrder(self.root)
+    def InOrder(self,root):
+        if root is None:
+            return
+        else:
+            self.InOrder(root.left)
+            print(root.data, end = ' ')
+            self.InOrder(root.right)
+t = Tree()
+t.Insert(4)
+t.Insert(1)
+t.Insert(50)
+t.Display()

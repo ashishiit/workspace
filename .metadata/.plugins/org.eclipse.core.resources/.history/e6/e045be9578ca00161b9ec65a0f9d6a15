@@ -1,0 +1,16 @@
+'''
+Created on Dec 24, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.next = None
+        self.data = data
+class SeparateChain:
+    def __init__(self):
+        self.first = None
+        self.last = None
+    def Insert(self,data):
+        NewLink = Link(data)
+        

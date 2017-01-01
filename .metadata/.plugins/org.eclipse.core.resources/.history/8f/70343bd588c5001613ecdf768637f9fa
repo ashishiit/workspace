@@ -1,0 +1,42 @@
+'''
+Created on Dec 18, 2016
+
+@author: S528358
+'''
+class Link:
+    def __init__(self,data):
+        self.next = None
+        self.data = data
+class Merge2SortedLists:
+    def __init__(self):
+        self.first = None
+#         self.first2 = None
+    def InsertFirst(self,data):
+        NewLink = Link(data)
+        NewLink.next = self.first
+        self.first = NewLink
+    def Display(self):
+        current1 = self.first
+        while current1 is not None:
+            print(current1.data)
+            current1 = current1.next
+    def Solution(self):
+        current1 = l1
+        current2 = l2
+l1 = Merge2SortedLists()
+l1.InsertFirst(22)
+l1.InsertFirst(4)
+l1.InsertFirst(3)
+l1.InsertFirst(2)
+l1.InsertFirst(1)
+l1.Display()
+print('*****************')
+l2 = Merge2SortedLists()
+l2.InsertFirst(30)
+l2.InsertFirst(20)
+l2.InsertFirst(10)
+l2.Display()
+            
+        
+    
+    
