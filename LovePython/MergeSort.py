@@ -1,39 +1,42 @@
 '''
-Created on Dec 20, 2016
+Created on Aug 3, 2018
 
-@author: S528358
+@author: s528358
 '''
-# a = []
-def Sort(a):
-    if len(a)>1:
-        mid = len(a) //2
-        left = Sort(a[:mid])
-        right = Sort(a[mid:])
-        return Merge(a,left,right)
+def MergeSort(a):
+    print('control flow =',a)
+    if len(a)==1:
+        return
     else:
-        return a
-def Merge(a,left,right):
-#     c = []
-    i = 0
-    j = 0
-    k = 0
-    while i < len(left) and j < len(right):
-        if left[i] < right[j]:
+        mid = len(a)//2
+        print('mid = ',mid)
+        left = a[:mid]
+        right = a[mid:]
+        print('left = ',left)
+        print('right = ',right)
+        MergeSort(left)
+        MergeSort(right)
+        
+        i = 0
+        j = 0
+        k = 0
+        while i<len(left) and j<len(right):
+            if left[i] < right[j]:
+                a[k] = left[i]
+                i = i + 1
+            else:
+                a[k] = right[j]
+                j = j + 1
+            k = k + 1
+        while i < len(left):
             a[k] = left[i]
-#             k = k + 1
             i = i + 1
-        else:
+            k = k + 1
+        while j < len(right):
             a[k] = right[j]
             j = j + 1
-#             k = k + 1
-        k = k + 1
-    while i < len(left):
-        a[k] = left[i]
-        k = k + 1
-        i = i + 1
-    while j < len(right):
-        a[k] = right[j]
-        k = k + 1
-        j = j + 1
-    return a
-print(Sort([20, 1,-12, 30]))
+            k = k + 1
+        print('a = ',a)
+a = [64, 21, 33, 70]
+MergeSort(a)
+print('sorted elements = ',a)
