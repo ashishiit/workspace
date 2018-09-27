@@ -27,6 +27,7 @@ def Merge(a,left,right):
             j = j + 1
 #             k = k + 1
         k = k + 1
+    print(a)
     while i < len(left):
         a[k] = left[i]
         k = k + 1
@@ -36,4 +37,4 @@ def Merge(a,left,right):
         k = k + 1
         j = j + 1
     return a
-print(Sort([20, 1,-12, 30]))
+print(Sort([3, 1, 5, 2]))

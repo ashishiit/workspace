@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pydev-testrun version="1.0"?><pydev-testsuite>
-<summary errors="0" failures="0" finished="true" name="Test Run: 3" tests="0" total_time="Finished in: 0.00 secs."/>
+<summary errors="0" failures="1" finished="true" name="Test Run: 44" tests="3" total_time="Finished in: 0.01 secs."/>
+<test location="C:\Users\s528358\workspace\LovePython\Sort_test.py" status="ok" test="Sort_test.test_Builtin" time="0.00">
+<stdout/>
+<stderr/>
+</test>
+<test location="C:\Users\s528358\workspace\LovePython\Sort_test.py" status="fail" test="Sort_test.test_InsertionSort" time="">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\s528358\workspace\LovePython\Sort_test.py", line 16, in test_InsertionSort
+    self.assertEqual(Insertion_Sort(a)[k+1], Selection_Algo(a, 0, len(a)-1, k), msg = None)
+AssertionError: 2 != 1
+]]></stderr>
+</test>
+<test location="C:\Users\s528358\workspace\LovePython\Sort_test.py" status="ok" test="Sort_test.test_QuickSort" time="0.00">
+<stdout/>
+<stderr/>
+</test>
 <launch mode="run">
 <launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration local="true" path="LovePython Susan_Test_Practise.py"/>
+<launchConfiguration local="true" path="LovePython Sort_test.py"/>
 ]]></launch_memento>
 </launch>
 </pydev-testsuite>

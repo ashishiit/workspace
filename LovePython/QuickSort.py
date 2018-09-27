@@ -3,8 +3,8 @@ Created on Dec 20, 2016
 
 @author: S528358
 '''
-# a = [0, 6, 0, 6, 4, 0, 6, 0, 6, 0, 4, 3, 0, 1, 5, 1, 2, 4, 2, 4]
-a = [5,1,56,3]
+a = [54,26,93,17,77,31,44,55,20]
+# a = [54,7,1]
 def Sort(arr,left,right):
     if left < right:
         part = Partition_Pivot2(arr, left, right)

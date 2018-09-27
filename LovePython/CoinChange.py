@@ -5,18 +5,17 @@ Created on Dec 31, 2016
 '''
 a = [1, 2, 3]
 total = 5
-s = [0] * 5
+s = [0] * 6
 s[0] = 0
 for i in range(1, 6):
-    print('value of i =%d'%i)
+#     print('value of i =%d'%i)
     test = []
     for j in range(3):
         if i >= a[j]:
             test.append(s[i-a[j]])
-            print('test = ',test)
-    print('***check***')
+#             print('test = ',test)
+#     print('***check***')
     
     s[i] = min(test)+1
-    print('%d and %d ='%(s[i], i))
-for i in range(1,6):
-    print(s[i])
+#     print('%d and %d ='%(s[i], i))
+print('min # of coins for total of 5 = %d'%s[5])

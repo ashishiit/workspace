@@ -2,22 +2,32 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="count" key="selection"/>
+		<item value="first" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="count"/>
-			<item value="writelines"/>
+			<item value="first"/>
+			<item value="storage"/>
+			<item value="PrintLevel"/>
+			<item value="a"/>
+			<item value="djangonautic"/>
+			<item value="users"/>
+			<item value="user"/>
+			<item value="ans"/>
+			<item value="CreateArticle"/>
 			<item value="print"/>
-			<item value="printlines"/>
-			<item value="test"/>
-			<item value="test_line"/>
-			<item value="outpu"/>
-			<item value="2014"/>
+			<item value="TIME"/>
+			<item value="site"/>
+			<item value="core"/>
+			<item value="MEDIA"/>
+			<item value="root"/>
 		</list>
 		<list key="replacehistory">
+			<item value="PrintNodes"/>
+			<item value="nested_list"/>
+			<item value="base"/>
 			<item value="writelines"/>
 		</list>
 	</section>
@@ -25,7 +35,7 @@
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="390" key="DIALOG_HEIGHT"/>
-		<item value="925" key="DIALOG_X_ORIGIN"/>
+		<item value="1048" key="DIALOG_X_ORIGIN"/>
 		<item value="165" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

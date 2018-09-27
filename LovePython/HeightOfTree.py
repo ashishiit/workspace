@@ -31,6 +31,7 @@ class Tree:
                         return
     def Solution(self):
         print('height of tree ', self.height(self.root))
+#         self.height(self.root)
     def height(self,root):
         if root is None:
             return 0
@@ -40,6 +41,10 @@ class Tree:
             return left+1
         else:
             return right+1
+#         if left > right:
+#             return left+1
+#         else:
+#             return right+1
     def Display(self):
         self.InOrder(self.root)
     def InOrder(self,root):
