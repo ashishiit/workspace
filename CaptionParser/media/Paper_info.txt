@@ -1,0 +1,4 @@
+
+	
+Blog feature:
+1. drop down box to look for content in the blog.

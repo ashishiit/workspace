@@ -1,0 +1,118 @@
+UNT application reference : 1026590
+
+Why do you want to work for Vote.org? *
+I am intrigued by the mission statement of Vote.org which is
+the use of technology to simplify political engagement thereby
+increasing voter turnout. I am personally very passionate about
+using technology to simplify complex problems people face. I feel that
+the citizens want to vote but there may be some inconvenience or
+complications involved which demotivate them to vote. If technology
+can help to remove or reduce this barrier then I would be very happy
+to help using my skill and experience.
+
+Tell us how this role fits in to your career trajectory. *
+I have previous work experience working as Software Test Engineer.
+I want to improve to a Software Engineering position through this role.
+After some time I would think to improve to a Product Manager role and grow within the same company.
+
+What makes you a great fit for this job? *
+I think I have the potential to deliver quality work
+because I have experience with some of the required skill set.
+I have the basic understanding of those skills and can hone it further
+to gain mastery.
+
+Tell us about a project that you've taken from idea to production. *
+I thought of creating a blogging service. Anyone can use it to create one's own blog.
+The user can add a title, add some text and add a picture to the blog. Other users can
+comment on that blog as well.
+Here is the GitHub link to the project https://github.com/ashishiit/ashish-blog
+The project is live at https://projectashish.herokuapp.com/
+
+Tell us about a time where you were involved with a major issue/outage and how you responded *
+I used to write automation scripts for the entire regression test cases for Android mobile devices
+at Motorola Mobility, Chicago. Once there was a major update to the software with critical fixes and the upper management
+wanted to see the test results next day itself. Since there were major updates, I worked late night
+after business work hours to update the test code. Thus I was able to run the automation overnight
+and have the results the next day early morning.
+
+It's your first day on the job. Based on your understanding of the position, challenges, and opportunities, what are the first questions you would ask and why? *
+1. what is the objective of the position in greater detail because I need to have a clear understanding of the problem and I can think accordingly to provide a solution.
+2. Is there any existing issue so that I can figure out what is preventing the product to be 100% efficient.
+3. Can we add some new features to the product so that it can help to reach more customers.
+
+Which of the "bonus skills" will you bring to Vote.org? *
+Experience working remotely
+Experience working on a small team
+Experience with GitHub, forking, and issue tracking.
+Experience building accessible software and testing for accessibility
+
+###################################################################################
+## first question
+
+def flatten_list(nested_list):
+  """
+  Flatten a arbitrarily nested list
+  Args:
+    nested_list: a nested list with item to be either integer or list
+    example:
+      [2,[[3,[4]], 5]]
+  Returns:
+    a flattened list with only integers
+    example:
+      [2,3,4,5]
+  """
+
+
+
+
+################################################################################
+## Second question:
+## you need to define the tree/node object and also define the function to serialize the tree
+
+    class Node:
+      pass
+    
+    def serialize_tree(tree):
+      """
+      Serialize a tree from top to bottom, left to right to a list of values
+      Args: 
+        a Tree object, each node has an integer value, and optionally have a left and right children, The tree is not ordered or balanced, it's just a binary tree
+        example:
+            1
+           / \
+          2   3
+         / \ / \
+           4 2
+      Returns: 
+        a list of serialized values
+        example: [1,2,3,None,4,2,None]
+		
+		
+############################
+1. Write a function that takes two parameters as input:
+* string_list, a list of strings
+* n, a positive integer
+and returns a list of each string that appears exactly n times in string_list 
+and each string should appear exactly once in the result.
+example: 
+* string_list = ['red', 'red', 'blue', 'yellow', 'blue']
+* n = 2
+* returns: ['red', 'blue']
+NOTE: You will be testing this function for the next question.
+
+################################################################
+3. Write a function `is_balanced` that takes 1 parameter as input:
+* parens, a string containing only the characters '(' and ')'
+and returns a boolean indicating whether the parentheses are "balanced" (in the typical sense in math/programming). Some examples:
+* "()()()()" is balanced
+* ")()()()(" is NOT balanced
+* "((())())" is balanced
+* "(((((())" is NOT balanced
+NOTE: You will be testing this function for the next question.
+
+###############################################################
+https://www.interviewzen.com/dashboard/d2Spfx
+
+
+janett gardner 410-740-3201
+301-286-9804

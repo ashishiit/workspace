@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+</head>
+<body>
+
+<p id="test">
+Hello World !!
+</p>
+<ul id = "list">
+   <li></li>
+</ul> 
+<div id = "svgcontainer">
+      </div>
+<script>
+var width = 300;
+var height = 300;
+var svg = d3.select("#svgcontainer")
+   .append("svg")
+   .attr("width", width)
+   .attr("height", height);
+svg.append("line")
+   .attr("x1", 100)
+   .attr("y1", 100)
+   .attr("x2", 200)
+   .attr("y2", 200)
+   .style("stroke", "rgb(255,0,0)")
+   .style("stroke-width", 2);
+d3.select("#list").selectAll("li")
+.data([10, 20, 30, 25, 15])
+.text(function(d) 
+   { return "This is pre-existing element and the value is " + d*d; })
+.enter()
+.append("li")
+.text(function(d) 
+   { return "This is dynamically created element and the value is " + d*d; });
+</script>
+</body>
+</html>

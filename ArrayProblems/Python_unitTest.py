@@ -16,7 +16,7 @@ class MyTest(unittest.TestCase):
 
     def test1(self):
         '''successful scenario: dummy url website remembered by the code'''
-        string='http://dummy.restapiexample.com/api/v1/employees'
+        string='https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fdrive.google.com%2ffile%2fd%2f1Issk-oEOx0aU2FydLkTw3tL4dRAg4MAE%2fview%3fusp%3dsharing&c=E,1,X5RaPKPX7FEuMVyuurBysSFT3VYsHliLZCMIvvXgNLCPagns_3vPvS35nPYqz-LrwCyBPOFpujRbu46Z57yv-RB1h2ZZN-EJcuJMPIsV37Y,&typo=1'
         try:
             obj = RE_python.Regex_python(string)
             obj.Validate_url()
